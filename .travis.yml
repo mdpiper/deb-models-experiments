@@ -1,0 +1,21 @@
+language: python
+
+python:
+  - "2.7"
+
+os:
+  - linux
+
+before_install:
+  - sudo apt-get update -qq
+  - wget http://csdms.colorado.edu/repo/deb_experimental/csdms-hdf5_1.8.9-2_amd64.deb
+
+install:
+  - sudo dpkg -i csdms-hdf5_1.8.9-2_amd64.deb
+
+before_script:
+  - export CSDMS_DIR=/usr/local/csdms
+  - PATH=$CSDMS_DIR/bin:$PATH
+
+script:
+  - h5dump --version
