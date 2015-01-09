@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mdpiper/deb-models-experiments.svg?branch=master)](https://travis-ci.org/mdpiper/deb-models-experiments)
+
 # deb-models-experiments
 
 These are experiments in packaging CSDMS models
